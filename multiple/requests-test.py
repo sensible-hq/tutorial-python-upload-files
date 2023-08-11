@@ -1,10 +1,15 @@
 import requests
 
+target_file_1_path = "../samples/sample.pdf"
+target_file_2_path = "../samples/sample-2.pdf"
+target_file_3_path = "../samples/sample-3.pdf"
+target_file_4_path = "../samples/sample-4.pdf"
+
 # create references to the files to be uploaded
-target_file_1 = open("../samples/sample.pdf", "rb")
-target_file_2 = open("../samples/sample-2.pdf", "rb")
-target_file_3 = open("../samples/sample-3.pdf", "rb")
-target_file_4 = open("../samples/sample-4.pdf", "rb")
+target_file_1 = open(target_file_1_path, "rb")
+target_file_2 = open(target_file_2_path, "rb")
+target_file_3 = open(target_file_3_path, "rb")
+target_file_4 = open(target_file_4_path, "rb")
 
 # create a dict object with the file objects
 target_files = {
